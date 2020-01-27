@@ -29,10 +29,13 @@ const Content = styled.div`
 const Layout = ({ children }) => {
   let localIsDark
 
-  if (localStorage.getItem('isDark') === 'false') {
-    localIsDark = false
-  } else {
-    localIsDark = true
+  if (typeof window !== 'undefined') {
+    if (localStorage.getItem('isDark') === 'false') {
+      localIsDark = false
+    } else {
+      localIsDark = true
+    }
+    console.log(localIsDark ? 'dark mode' : 'light mode')
   }
 
   console.log(localIsDark)
