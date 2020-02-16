@@ -27,20 +27,7 @@ const Content = styled.div`
 `
 
 const Layout = ({ children }) => {
-  let localIsDark
-
-  if (typeof window !== 'undefined') {
-    if (localStorage.getItem('isDark') === 'false') {
-      localIsDark = false
-    } else {
-      localIsDark = true
-    }
-    console.log(localIsDark ? 'dark mode' : 'light mode')
-  }
-
-  console.log(localIsDark)
-
-  const [isDark, setIsDark] = useState(localIsDark)
+  const [isDark, setIsDark] = useState(true)
 
   return (
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
