@@ -22,8 +22,8 @@ module.exports = {
         name: `Somesh Kar`,
         short_name: `someshkar`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#29263E`,
+        theme_color: `#29263E`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
