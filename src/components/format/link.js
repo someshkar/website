@@ -1,10 +1,11 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import propTypes from 'prop-types'
 
 const Link = ({ to, children }) => (
-  <a href={to} target="_blank" rel="noopener noreferrer">
+  <OutboundLink href={to} target="_blank" rel="noopener noreferrer">
     {children}
-  </a>
+  </OutboundLink>
 )
 
 Link.propTypes = propTypes.shape({
