@@ -28,7 +28,7 @@ const IndexPage = () => (
     <Container>
       <Heading>Hi, I'm Somesh.</Heading>
       <P style={{ marginTop: '1rem' }}>
-        A 15 year old designer and developer from India.
+        A 16 year old designer and developer from India.
       </P>
       <P>
         I love building things that people want. I’m a member of{' '}
